@@ -46,8 +46,8 @@ grid_search.fit(X_train,y_train)
 print(grid_search.best_estimator_)
 
 final_model = DecisionTreeClassifier(criterion="gini",
-                                     max_depth=3,
-                                     min_samples_leaf=1)
+                                     max_depth=6,
+                                     min_samples_leaf=2)
 
 final_model.fit(X_train,y_train)
 
